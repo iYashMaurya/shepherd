@@ -2,6 +2,8 @@ module github.com/rancher/shepherd
 
 go 1.25.0
 
+toolchain go1.25.4
+
 replace (
 	github.com/docker/distribution => github.com/docker/distribution v2.8.2+incompatible // rancher-machine requires a replace is set
 	github.com/rancher/aks-operator => github.com/iYashMaurya/aks-operator v0.0.0-20260102065012-f61a29f5791b
