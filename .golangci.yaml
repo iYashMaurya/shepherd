@@ -4,7 +4,6 @@ linters:
   default: none
   enable:
     - ineffassign
-    - goimports
     - govet
     - misspell
     - revive
@@ -36,6 +35,10 @@ linters:
       - clients/rancher/generated
       - .*\.yaml$
       - .*\.yml$
+
+formatters:
+  enable:
+    - goimports
 
 run:
   tests: false
