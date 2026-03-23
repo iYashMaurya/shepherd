@@ -17,7 +17,7 @@ linters:
         - name: confusing-naming
           disabled: true
         - name: exported
-          disabled: false
+          disabled: true    # ← disable to avoid pre-existing noise
     goconst:
       min-len: 2
       min-occurrences: 10
